@@ -39,10 +39,10 @@ public class Xusers extends AbstractModel<String> {
 	@Column(name = "zemail", length = 20)
 	private String zemail;
 
-	@Column(name = "xpassword", length = 20)
+	@Column(name = "xpassword", length = 250)
 	private String xpassword;
 
-	@Column(name = "xpasswordold", length = 20)
+	@Column(name = "xpasswordold", length = 250)
 	private String xpasswordold;
 
 	@Column(name = "xwh")

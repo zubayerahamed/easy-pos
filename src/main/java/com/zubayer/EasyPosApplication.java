@@ -2,6 +2,8 @@ package com.zubayer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 /**
  * @author Zubayer Ahamed
@@ -14,4 +16,8 @@ public class EasyPosApplication {
 		SpringApplication.run(EasyPosApplication.class, args);
 	}
 
+	@Bean
+	BCryptPasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
 }
